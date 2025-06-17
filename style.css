@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font_heading: "Outfit", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --bg-color: #2D0070;
+  --foreground-color: white ;
+  --primary-color: #9f3ee7;
+  --card-bg-color: #3E057F;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--foreground-color);
+  
+}
+
+h1 {
+  font-size: 87px;
+  font-family: var(--font_heading);
+  
+}
+h2 {
+  font-size: 57px;
+  line-height: 1;
+  font-family: var(--font_heading);
+}
+h3 {
+  font-size: 20px;
+  font-family: var(--font_heading);
+  text-transform: uppercase;
+  line-height: 27.5px;
+  letter-spacing: 10%;
+  font-weight: 600; /**semi bold=600 **/
+}
+
+p {
+  font-size: 18px;
+  font-family: var(--font-body);
+  line-height: 27.5px;
+}
+
+
+li {
+  font-size: 20px;
+  color: var(--foreground-color);
+  font-family: var(--font-body);
+  
+}
+
+a {
+  text-decoration: none;
+  color: var(--foreground-color);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+    color: wheat;
+    
+  }
+}
+
+
+/** medium text ...eta last er part (insight edge,contact,marketplace**/
+.text-md {
+  font-size: 16px;
+  font-family: var(--font-body);
+  /** eta kothao use hoynai **/
+}
+
+.text-sm {
+  font-size: 18px;
+  font-family: var(--font-body);
+  line-height: 120%;
+}
+
+
+
+/** nav section **/
+.container {
+  max-width: 1065px;
+  margin-top: 0 auto;
+}
+
+nav {
+  margin-top: 64px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 75px;
+  }
+}
+
+/** Hero section **/
+
+button {
+  padding: 22px 32px;
+  font-size: 20px;
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+}
+
+.solid_btn {
+  background-color: var(--primary-color);
+  color: var(--foreground-color);
+  border: none;
+}
+
+.outline_btn {
+  background-color: transparent;
+  color: var(--foreground-color);
+  border: 2px solid var(--primary-color);
+}
+
+.button_container {
+  margin-top: 36px;
+  display: flex;
+  gap: 16px;
+  button { 
+  width: 255px;
+}
+}
+
+.hero_section {
+display: flex;
+
+.content {
+  flex: 1;
+
+  h1 {
+   line-height: 1; 
+  }
+  p {
+    margin-top: 28px;
+  }
+}
+
+.image_container {
+ flex: 1;
+}
+.image_container img {
+  width: 100%;
+}
+
+}
+
+
+/** brand section **/
+
+.brand_section {
+  margin-top: 160px ;
+  margin-bottom: 100px;
+  .brand_logos{
+   height: 100px;
+   display: flex;
+   align-items: center;
+   background-color: rgba(99, 88, 189, 0.2);
+   padding: 22px 76px;
+   gap: 16px;
+   margin-top: 32px;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+
+   img {
+    height: 60%;
+   }
+
+}
+}
+
+/** feature section **/
+
+.feature_section {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  .image_container {
+   flex: 1;
+
+   img {
+    width: 100%;
+   }
+  } 
+  .content {
+   flex: 1;
+
+   h2 {
+    margin-top: 16px;
+    margin-bottom: 20px;
+   }
+
+   button {
+    margin-top: 24px;
+    min-width: 356px;
+   }
+
+  }
+}
+
+/** Testimonial section **/
+
+.testimonial_section {
+  margin-top: 174px;
+  text-align: center;
+ 
+ 
+  .testimonials {
+    display: flex;
+    gap: 16px;
+    margin-top: 120px;
+    margin-bottom: 110px;
+    
+     h2 {
+      margin-top: 16px;
+     }
+
+    .card {
+      padding-top: 95px;
+      padding-bottom: 48px;
+      padding-left: 28px;
+      padding-right: 28px;
+      position: relative;
+      background-color: var(--card-bg-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 20px;
+      gap: 20px;
+
+      .image_container{
+       position: absolute;
+       top: -50px;
+       left: 50%;
+       width: 138px;
+       transform: translateX(-50%);
+
+        img {
+          height: 138px;
+          width: 138px;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+/** Ready section **/
+
+.ready_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: linear-gradient(318deg, #B44CFF 0%, #560D95 100%);
+  height: 441px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+ 
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+  h3 {
+    margin-top: 65px;
+    margin-bottom: 29px;
+  }
+}
+
+.black_btn {
+  background-color: black;
+  color: var(--foreground-color);
+  border: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+
+
+/** Footer section **/
+
+footer {
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 48px;
+  font-size: 16px;
+  justify-content: space-between;
+  .logo {
+    font-weight: bold;
+  }
+  .links {
+    h4 {
+    }
+
+    ul {
+      margin-top: 16px;
+      list-style: none;
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+  .newsletter {
+    .input_container {
+      margin-top: 20px;
+      width: 345px;
+      background: #13134d;
+      position: relative;
+      border-radius: 9999px;
+      input {
+        border-radius: 9999px;
+        padding: 0 16px;
+        height: 50px;
+        background: #13134d;
+        width: 100%;
+        border: none;
+      }
+      button {
+        position: absolute;
+        right: 4px;
+        border-radius: 9999px;
+        padding: 0;
+        margin-top: 2px;
+        background: var(--primary-color);
+        border: none;
+        color: white;
+        width: 115px;
+        height: 44px !important;
+      }
+    }
+  }
+}
+
+.bottom_bar {
+
+}
+
+.wrapper {
+  overflow: hidden;
+  z-index: 10;
+  position: relative;
+}
+
+.grad_bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
